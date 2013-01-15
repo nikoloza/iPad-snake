@@ -153,39 +153,39 @@ snake.prototype.frontmove = function()
 }
 
 // $(document).ready() {
-// 	$(".arrowButton").click(function() {
-// 		  switch ($(this).attr('id'))
-// 		  {
-// 			case 'bottomTopButton': /* up */
-// 			if (board[W*snake2.sy+snake2.sx] != down && snake2.moved) { board[W*snake2.sy+snake2.sx] = up; snake2.moved = false; }
-// 			  break;
-// 			case 'bottomBottomButton': /* down */
-// 			  if (board[W*snake2.sy+snake2.sx] != up && snake2.moved) { board[W*snake2.sy+snake2.sx] = down; snake2.moved = false; }
-// 			  break;
-// 			case 'bottomLeftButton': /* left */
-// 			  if (board[W*snake2.sy+snake2.sx] != right && snake2.moved) { board[W*snake2.sy+snake2.sx] = left; snake2.moved = false; }
-// 			  break;
-// 			case 'bottomRightButton': /* right */
-// 			  if (board[W*snake2.sy+snake2.sx] != left && snake2.moved) { board[W*snake2.sy+snake2.sx] = right; snake2.moved = false; }
-// 			  break;
-// 			case 'topTopButton': /* W */
-// 			  if (board[W*snake1.sy+snake1.sx] != down && snake1.moved) { board[W*snake1.sy+snake1.sx] = up; snake1.moved = false; }
-// 			  break;
-// 			case 'topBottomButton': /* S */
-// 			  if (board[W*snake1.sy+snake1.sx] != up && snake1.moved) { board[W*snake1.sy+snake1.sx] = down; snake1.moved = false; }
-// 			  break;
-// 			case 'topLeftButton': /* A */
-// 			  if (board[W*snake1.sy+snake1.sx] != right && snake1.moved) { board[W*snake1.sy+snake1.sx] = left; snake1.moved = false; }
-// 			  break;
-// 			case 'topRightButton': /* D */
-// 			  if (board[W*snake1.sy+snake1.sx] != left && snake1.moved) { board[W*snake1.sy+snake1.sx] = right; snake1.moved = false; }
-// 			  break;
-// 			case 'pauseButton': /* P */
-// 			  gameState.togglePause();
-// 			  break;
-// 		  }
+	$(".arrowButton").click(function() {
+		  switch ($(this).attr('id'))
+		  {
+			case 'bottomTopButton': /* up */
+			if (board[W*snake2.sy+snake2.sx] != down && snake2.moved) { board[W*snake2.sy+snake2.sx] = up; snake2.moved = false; }
+			  break;
+			case 'bottomBottomButton': /* down */
+			  if (board[W*snake2.sy+snake2.sx] != up && snake2.moved) { board[W*snake2.sy+snake2.sx] = down; snake2.moved = false; }
+			  break;
+			case 'bottomLeftButton': /* left */
+			  if (board[W*snake2.sy+snake2.sx] != right && snake2.moved) { board[W*snake2.sy+snake2.sx] = left; snake2.moved = false; }
+			  break;
+			case 'bottomRightButton': /* right */
+			  if (board[W*snake2.sy+snake2.sx] != left && snake2.moved) { board[W*snake2.sy+snake2.sx] = right; snake2.moved = false; }
+			  break;
+			case 'topTopButton': /* W */
+			  if (board[W*snake1.sy+snake1.sx] != down && snake1.moved) { board[W*snake1.sy+snake1.sx] = up; snake1.moved = false; }
+			  break;
+			case 'topBottomButton': /* S */
+			  if (board[W*snake1.sy+snake1.sx] != up && snake1.moved) { board[W*snake1.sy+snake1.sx] = down; snake1.moved = false; }
+			  break;
+			case 'topLeftButton': /* A */
+			  if (board[W*snake1.sy+snake1.sx] != right && snake1.moved) { board[W*snake1.sy+snake1.sx] = left; snake1.moved = false; }
+			  break;
+			case 'topRightButton': /* D */
+			  if (board[W*snake1.sy+snake1.sx] != left && snake1.moved) { board[W*snake1.sy+snake1.sx] = right; snake1.moved = false; }
+			  break;
+			case 'pauseButton': /* P */
+			  gameState.togglePause();
+			  break;
+		  }
 
-// 	});
+	});
 // };
 
 function dropFruit()
