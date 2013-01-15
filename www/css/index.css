@@ -6,24 +6,43 @@ body {
 }
 
 #topControls {
+	position: absolute;
+	background-color: yellow;
+	width: 768;
+	height: 80;
+	padding: 10px;
+}
+
+#topArrowControls {
 	background-color: #333399;
 	width: 200px;
     height: 68px;
     position: relative;
-    margin-left: 568px;
+    margin-left: 548px;
 }
 
 #bottomControls {
+	position: absolute;
+	background-color: yellow;
+	width: 768;
+	height: 80;
+	padding: 10px;
+	-webkit-transform: rotate(180deg); /* Safari and Chrome */
+	margin-top: -88px;	
+}
+
+#bottomArrowControls {
 	background-color: #333399;
 	width: 200px;
     height: 68px;
     position: relative;
-    margin-left: 568px;
+    margin-left: 548px;
 }
 
 #gameBoard {
 	width: 768px;
 	height: 768px;
+	margin-top: 80px;
 }
 
 .boardCell {

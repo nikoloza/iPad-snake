@@ -92,6 +92,7 @@ static NSString* gOriginalUserAgent = nil;
 
         // load config.xml settings
         [self loadSettings];
+        
     }
 }
 
@@ -106,6 +107,8 @@ static NSString* gOriginalUserAgent = nil;
 {
     self = [super init];
     [self __init];
+    [self.webView.scrollView setScrollEnabled:NO];
+
     return self;
 }
 
@@ -445,6 +448,7 @@ static NSString* gOriginalUserAgent = nil;
 
         if ((gOriginalUserAgent == nil) || cachedValueIsOld) {
             UIWebView* sampleWebView = [[UIWebView alloc] initWithFrame:CGRectZero];
+            
             gOriginalUserAgent = [sampleWebView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
 
             [userDefaults setObject:gOriginalUserAgent forKey:CDV_USER_AGENT_KEY];
@@ -479,6 +483,8 @@ static NSString* gOriginalUserAgent = nil;
         [[NSUserDefaults standardUserDefaults] registerDefaults:dict];
 
         self.webView = [self newCordovaViewWithFrame:webViewBounds];
+        [self.webView.scrollView setScrollEnabled:NO];
+
         self.webView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 
         [self.view addSubview:self.webView];

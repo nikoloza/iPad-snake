@@ -63,7 +63,6 @@
     self.viewController.useSplashScreen = YES;
     self.viewController.wwwFolderName = @"www";
     self.viewController.startPage = @"index.html";
-
     // NOTE: To customize the view's frame size (which defaults to full screen), override
     // [self.viewController viewWillAppear:] in your view controller.
 
