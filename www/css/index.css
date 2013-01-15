@@ -1,3 +1,5 @@
+*,
+html,
 body {
 	margin: 0;
 	padding: 0;
@@ -5,16 +7,18 @@ body {
 
 #topControls {
 	background-color: #333399;
-	margin: 0;
-	width: 768px;
-    height: 117px;
+	width: 200px;
+    height: 68px;
+    position: relative;
+    margin-left: 568px;
 }
 
 #bottomControls {
 	background-color: #333399;
-	margin: 0;
-	width: 768px;
-    height: 128px;
+	width: 200px;
+    height: 68px;
+    position: relative;
+    margin-left: 568px;
 }
 
 #gameBoard {
@@ -33,4 +37,60 @@ body {
 	background-color: #000066;
 	width: 64px;
 	height: 32px;
+}
+#bottomLeftButton {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#bottomBottomButton {
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	margin-left: -32px;
+}
+
+#bottomRightButton {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#bottomTopButton {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -32px;
+}
+
+#bottomLeftButton {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#topBottomButton {
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	margin-left: -32px;
+}
+
+#topRightButton {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#topTopButton {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -32px;
+}
+#topLeftButton {
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
